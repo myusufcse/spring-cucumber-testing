@@ -5,11 +5,19 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import io.cucumber.spring.CucumberContextConfiguration;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
+@EnableAutoConfiguration
+@CucumberContextConfiguration
 @Slf4j
-public class ScenarioHooks {
+@SuppressWarnings("unused")
+public class ScenarioHooks extends BaseContextConfiguration {
+
     /**
-     * Start driver
+     * Start mobile driver
      *
      * @param scenario scenario object
      */
