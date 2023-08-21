@@ -10,10 +10,11 @@ group = "org.example"
 version = "1.0-SNAPSHOT"
 description = "Spring Cucumber Testing Framework Skeleton"
 
-val assertjVersion = "3.22.0"
+val assertjVersion = "3.24.0"
 //val seleniumVersion = "4.8.0"
-val junitVersion = "5.0.3"
-val cucumberVersion = "7.11.1"
+val junitVersion = "5.10.0"
+val cucumberVersion = "7.13.0"
+val slf4jVersion = "2.0.7"
 //val springBootVersion = "2.6.6"
 //val springVersion = "5.3.19"
 
@@ -26,6 +27,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testImplementation("io.cucumber:cucumber-java:$cucumberVersion")
     testImplementation("io.cucumber:cucumber-junit:$cucumberVersion")
+    testImplementation("org.slf4j:slf4j-simple:$slf4jVersion")
 }
 
 // Utility functions
