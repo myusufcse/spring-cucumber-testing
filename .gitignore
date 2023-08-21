@@ -1,0 +1,26 @@
+# These files & directory will be ignored in git tracking.
+.gradle
+build/
+.project
+.factorypath
+.classpath
+target/
+.settings
+*.iml
+.idea/
+temp/
+archive/
+*.DS_store
+*.idsig
+*.jar
+*.log
+*.txt
+*.png
+*.jpg
+*.app
+**/lokalise
+*.apk
+*.plist
+*screenshots/
+*.mp4
+/build/
